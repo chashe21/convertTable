@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="function.css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div id="shekel">
+        <input id="shInput" type="number" placeholder="כמה שקלים תרצה להמיר">
+    </div>
+
+    <div id="convert">
+            <p id="coOutput">ערך מטבע אחרי המרה</p>
+    </div>
+
+    <div id="coinList">
+       <label for="coinList">סוגי מטבעות להמרה</label>
+       <select name="coins" id="coinListSelect">
+           <option value="listHead">בחר את המטבע שברצונך להמיר:</option>
+           <option value="euro">Euro</option>
+           <option value="dollar">Dollar</option>
+           <option value="pound">Pound</option>
+           <option value="yen">Yen</option>
+           <option value="swissfrank">SwissFrank</option>
+       </select>
+    </div>
+
+    <div>
+        <button id="calculate" onclick=convert()>בצע</button>
+    </div>
+
+    <script src="function.js"></script>
+
+</body>
+
+</html>
